@@ -40,7 +40,7 @@ gulp.task('img', function () {
           ]
       })
   ]))
-    .pipe(gulp.dest('./dist/img'))
+    .pipe(gulp.dest('./dist/assets/img'))
     .pipe(browserSync.reload({ stream: true }));
 });
 

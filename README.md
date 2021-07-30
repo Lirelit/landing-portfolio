@@ -7,8 +7,7 @@ mobile first,
 adaptive design,
 scss architecture 7+1,
 gulp bundle,
-js modules,
-flex-box grid based on mixins
+js modules
 ____
 
 #### To run project:
