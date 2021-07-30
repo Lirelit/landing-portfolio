@@ -1,0 +1,60 @@
+.footer {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include breakpoint(md) {
+        padding-top: 115px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        @include reset-list;
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        @include reset-list;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #090909;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__btn {
+        margin-bottom: 48px;
+        @include breakpoint(md) {
+            margin-bottom: 70px;
+            padding: 12px 28px;
+        }
+    }
+
+    &__icons-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 400px;
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        text-decoration: none;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    &__icon {
+        max-width: 40px;
+    }
+
+    &__copyright {
+        @include reset-list;
+        text-align: center;
+        color: var( --txt-light);
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

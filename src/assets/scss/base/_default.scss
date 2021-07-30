@@ -1,0 +1,15 @@
+html{
+    font-family: 'Gilroy';
+    font-size: 18px;  
+}
+
+body {
+    &.content-hidden{
+        overflow: hidden;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

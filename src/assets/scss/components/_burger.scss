@@ -1,0 +1,45 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33px;
+    height: 20px;
+    cursor: pointer;
+    color: var(--txt-dark);
+    z-index: 9;
+  
+    @include breakpoint(md) {
+      display: none;
+    }
+  
+    &_closed {
+        
+        top: 68%;
+
+      .burger__line {
+
+        background: var(--txt-light);
+        
+        &:nth-child(1) {
+          transform: translate(0, 4px) rotate(45deg);
+          
+        }
+  
+        &:nth-child(2) {
+          display: none;
+        }
+  
+        &:nth-child(3) {
+          transform: translate(0, -12px) rotate(-45deg);
+        }
+      }
+    }
+  
+    &__line {
+      height: 4px;
+      background: var(--txt-dark);
+      transition: $fast;
+    }
+  }
+
+ 

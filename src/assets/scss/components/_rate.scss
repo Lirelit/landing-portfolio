@@ -1,0 +1,36 @@
+.rate {
+    
+    &__star {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        margin-right: 4px;
+        margin-left: 4px;
+        background-image: var(--empty-rate);
+        background-repeat: no-repeat;
+        background-size: inherit;
+    }
+
+}
+
+.rate[data-mark="5"] .rate__star:nth-child(-n+5) {
+    background-image: var(--star-rate);
+
+}
+
+.rate[data-mark="4"] .rate__star:nth-child(-n+4) {
+    background-image: var(--star-rate);
+}
+
+.rate[data-mark="3"] .rate__star:nth-child(-n+3) {
+    background-image: var(--star-rate);
+}
+
+.rate[data-mark="2"] .rate__star:nth-child(-n+2) {
+    background-image: var(--star-rate);
+}
+
+.rate[data-mark="1"] .rate__star:nth-child(-n+1) {
+    background-image: var(--star-rate);
+}
+

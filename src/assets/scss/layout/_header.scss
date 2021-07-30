@@ -1,0 +1,94 @@
+.header {
+
+    &__inner {
+        padding-top: 65px;
+        position: relative;
+
+        @include breakpoint(md) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__menu-container {
+        display: none;
+
+        @include breakpoint(md) {
+            display: block;
+        }
+
+        &_visible {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding-top: 56px;
+            padding-left: 26px;
+            background-color: var(--bg-light);
+            z-index: 9;
+
+            .lang-switch {
+                display: block;
+                z-index: 10;
+            }
+        }
+    }
+
+    &__nav {
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    &__menu {
+        @include reset-list();
+
+        @include breakpoint(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__menu-item {
+        text-decoration: none;
+        color: var(--txt-light);
+        margin-bottom: 65px;
+        max-width: 80%;
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: bold;
+
+        @include breakpoint(md) {
+            font-size: 18px;
+        }
+    }
+
+    &__burger {}
+
+    &__lang-switch {
+        display: none;
+        position: absolute;
+        z-index: 15;
+
+        &_visible {
+            display: block;
+            margin-right: -50px;
+            top: 900%;
+            right: 0;
+        }
+    }
+
+    &__langs{
+        transform: rotate(90deg);
+    }
+
+    &__burger {
+        position: absolute;
+        right: 0;
+        bottom: -45%;
+
+        @include breakpoint(md) {
+            display: none;
+        }
+    }
+}

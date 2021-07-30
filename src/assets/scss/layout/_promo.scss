@@ -1,0 +1,73 @@
+.promo {
+    padding-bottom: 83px;
+
+    &__info-block {
+        position: relative;
+        @include breakpoint(md) {
+        display: flex; 
+        align-items: flex-end;
+        }
+    }
+
+    &__author {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 47px;
+        line-height: 1.3;
+        font-weight: bold;
+        @include breakpoint(md) {
+            margin-right: 29%;
+        }
+    }
+
+    &__info {
+        margin: 0;
+        margin-bottom: 36px;
+        line-height: 1.2;
+        @include breakpoint(md) {
+        margin-bottom: 27px;
+        }
+    }
+
+	&__lang-switch {
+        display: none;
+        position: absolute;
+        top: 49%;
+        right: 0;
+        @include breakpoint(md) {
+        display: block;
+        }
+	}
+
+	&__langs {
+        transform: rotate(270deg);
+        margin-right: -32px;
+	}
+
+	&__lang-item {
+        font-size: 16px;
+	}
+
+	&__lang-link {
+	}
+
+
+
+    &__img-block {
+        max-height: 478px;
+        overflow: hidden;
+        @include breakpoint(sm) {
+            max-height: 387px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        @include breakpoint(sm) { 
+            bottom: 270px;
+        }
+        @include breakpoint(md) {
+            bottom: 400px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.lang-switch { 
+
+    &__items {
+        @include reset-list;
+        display: flex;
+    }
+
+    &__item {
+        font-size: 34px;
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 1;
+        font-weight: bold;
+        border-right: 4px solid #000;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--txt-light);
+    }
+}
+ 
